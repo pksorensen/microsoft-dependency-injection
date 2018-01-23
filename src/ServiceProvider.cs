@@ -64,11 +64,6 @@ namespace Unity.Microsoft.DependencyInjection
 
         #region Disposable
 
-        ~ServiceProvider()
-        {
-            Dispose(false);
-        }
-
         public void Dispose()
         {
             Dispose(true);
